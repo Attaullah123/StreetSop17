@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23436a">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Soccer"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:id="@+id/button3"
+        android:textSize="19sp"
+        android:background="#182636"
+        android:textColor="#fafdfe"
+        android:layout_marginTop="38dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btn_per"
+        android:layout_alignLeft="@+id/btn_per"
+        android:layout_alignStart="@+id/btn_per"
+        android:elevation="0dp" />
+
+    <Button
+        android:text="Basketball"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_per"
+        android:textSize="19sp"
+        android:background="#182636"
+        android:textColor="#fafdfe"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/btn_uniform"
+        android:layout_alignLeft="@+id/btn_uniform"
+        android:layout_alignStart="@+id/btn_uniform" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="197dp"
+        android:textColor="#fafdfe"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:text="Football"
+        android:background="#182636"
+        android:id="@+id/btn_uniform"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
