@@ -1,5 +1,6 @@
 package com.hiconsolution.streetsop17;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -60,8 +61,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.cart) {
+            Intent intent = new Intent(getApplicationContext(), ShoppingCart.class);
+            startActivity(intent);
             return true;
         }
 

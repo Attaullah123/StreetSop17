@@ -28,7 +28,6 @@
             android:padding="8dip"
             app:centered="true"
             app:fillColor="#000"
-            app:pageColor="#fff"
             app:snap="false" />
         </RelativeLayout>
 

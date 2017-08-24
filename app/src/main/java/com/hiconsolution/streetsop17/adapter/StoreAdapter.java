@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.hiconsolution.streetsop17.R;
+import com.hiconsolution.streetsop17.StoreProfileActivity;
 import com.hiconsolution.streetsop17.models.StoreModel;
 
 import java.util.ArrayList;
@@ -73,9 +73,9 @@ public class StoreAdapter  extends RecyclerView.Adapter<StoreAdapter.ViewHolder>
                 @Override
                 public void onClick(View v) {
 
-//                    Intent intent = new Intent(v.getContext(), SecondPage.class);
-//                    v.getContext().startActivity(intent);
-                    Toast.makeText(v.getContext(), "os version is: " + feed.getTitle(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), StoreProfileActivity.class);
+                    v.getContext().startActivity(intent);
+                    //Toast.makeText(v.getContext(), "os version is: " + feed.getTitle(), Toast.LENGTH_SHORT).show();
                 }
             });
 

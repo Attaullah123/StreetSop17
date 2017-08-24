@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#212d39</color>
-    <color name="colorPrimaryDark">#1c4d23</color>
+    <color name="colorPrimary">#c4a23d</color>
+    <color name="colorPrimaryDark">#90710F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBack">#123456</color>
+
+    <color name="title_color">#000</color>
+    <color name="edit_profile">#5F76BF</color>
+    <color name="bottom_black_bgcolor">#90000000</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="textIconColorPrimary">#FFFFFF</color>
+    <color name="textBlack">#000000</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#727272</color>
+
+    <color name="colorAccentLight">#F8BBD0</color>
+
+    <color name="colorAccentDark">#c2185b</color>
+
+    <color name="facebook_bg">#3b5998</color>
+    <color name="facebook_bg_pressed">#2a406e</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#bd000000</color>
+    <color name="black_transparent_70percent">#B3000000</color>
+    <color name="semi_light_transparent">#5a000000</color>
+    <color name="semi_lighter_transparent">#2d000000</color>
+
+    <color name="background_grey">#f2f2f2</color>
+    <color name="line_lighter_grey">#dedede</color>
+    <color name="line_light_grey">#d7a7a7a7</color>
+    <color name="item_grey">#eeeeee</color>
+    <color name="grey_lighter">#bcbcbc</color>
+    <color name="grey">#d7666666</color>
+
+    <color name="toolbar_color">#c4a23d</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blcak">#000</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#272727</color>
+    <color name="colorBlackTransparent">#B3000000</color>
+    <color name="colorGrayText">#939495</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayback">#eff0f1</color>
+    <color name="color">#767578</color>
 </resources>

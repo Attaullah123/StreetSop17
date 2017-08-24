@@ -1,13 +1,21 @@
 package com.hiconsolution.streetsop17;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class Profile extends Fragment {
+
+    private ImageView btnFb,btnTwitter,btnGoogle;
+    private TextView registerAccount,forgetPassword;
 
     public Profile() {
     }
@@ -15,22 +23,29 @@ public class Profile extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.login_activity, container, false);
 
-        View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
-//        btnFb = (ImageButton) rootView.findViewById(R.id.btn_facebook);
-//        btnTwitter = (ImageButton) rootView.findViewById(R.id.btn_twitter);
-//        btnInsta = (ImageButton) rootView.findViewById(R.id.btn_insta);
-//        btnGoogle = (ImageButton) rootView.findViewById(R.id.btn_gmail);
-//        btnLinkdin = (ImageButton) rootView.findViewById(R.id.btn_linkedin);
-//        btnRss = (ImageButton) rootView.findViewById(R.id.btn_no);
-//
-//        btnFb.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/attaullah.khizar"));
-//                startActivity(intent);
-//            }
-//        });
+        btnFb = (ImageView) rootView.findViewById(R.id.imgFaceBook);
+        btnTwitter = (ImageView) rootView.findViewById(R.id.imgTwitter);
+        btnGoogle = (ImageView) rootView.findViewById(R.id.imgGooglePlus);
+        registerAccount = (TextView) rootView.findViewById(R.id.txtCreateAccount);
+        forgetPassword = (TextView) rootView.findViewById(R.id.txtForgotPassword);
+
+        btnFb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/attaullah.khizar"));
+                startActivity(intent);
+            }
+        });
+
+        registerAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(),RegisterAccount.class);
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }

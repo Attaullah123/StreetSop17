@@ -1,8 +1,6 @@
 package com.hiconsolution.streetsop17.models;
 
-/**
- * Created by cresset on 28/07/2017.
- */
+
 
 public class StoreModel {
 

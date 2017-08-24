@@ -21,9 +21,6 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * Created by Belal on 18/09/16.
- */
 
 
 public class Home extends Fragment {
@@ -129,7 +126,7 @@ public class Home extends Fragment {
 //
 //        }
 
-        final String[] versions = {"Alpha", "Beta", "CupCake", "Donut"};
+        final String[] versions = {"StreetShop", "StreetShop2", "StreetShop3", "StreetShop4"};
         final int[] icons = {R.drawable.slider5, R.drawable.slider2, R.drawable.slider3, R.drawable.slider4};
 
 
