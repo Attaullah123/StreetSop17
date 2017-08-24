@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:padding="5dp"
+    android:background="#ffffff"
+    android:id="@+id/window_popup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#eff0f1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/btm_prod_detial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                    />
+
+                <TextView
+                    android:id="@+id/line"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/connect_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#000" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#eff0f1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#1b1b1b"
+                        android:textStyle="bold"
+                        android:text="Condition"
+                    />
+
+                    <TextView
+                        android:id="@+id/btm_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:text="New"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    android:text="Brand"
+                    />
+                <TextView
+                    android:id="@+id/btm_brand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="0dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="75dp"
+                    android:textColor="#000"
+                    android:text="Deewatch"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Promotion"
+                    />
+                <TextView
+                    android:id="@+id/btm_promotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="43dp"
+                    android:text="Free Watch upon purchasing a watch"
+                    />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Size"
+                    />
+
+                    <TextView
+                        android:id="@+id/btm_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="35 mm"
+                        android:layout_marginLeft="86dp"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    android:text="Thickness"
+                    />
+                <TextView
+                    android:id="@+id/btm_thickness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="44dp"
+                    android:text="6 mm"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    android:text="Color"
+                    />
+                <TextView
+                    android:id="@+id/btm_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="0dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="78dp"
+                    android:text="Red/Black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Case Colour"
+                    android:textColor="#1b1b1b"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/btm_case_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:padding="0dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:text="Red/silver"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
