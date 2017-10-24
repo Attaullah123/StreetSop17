@@ -11,7 +11,7 @@
         android:layout_height="180dp">
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
+            android:id="@+id/pager12"
             android:layout_width="fill_parent"
             android:layout_height="200sp"
             android:layout_centerHorizontal="true"
@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true" />
 
         <com.viewpagerindicator.CirclePageIndicator
-            android:id="@+id/indicator"
+            android:id="@+id/indicator12"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -31,9 +31,23 @@
             app:snap="false" />
         </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/cart_recycler_view"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"/>
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:theme="@style/CircularProgress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
 </LinearLayout>

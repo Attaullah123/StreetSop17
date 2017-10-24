@@ -3,7 +3,6 @@ package com.hiconsolution.streetsop17.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,12 +11,9 @@ import android.view.ViewGroup;
 
 import com.hiconsolution.streetsop17.R;
 import com.hiconsolution.streetsop17.adapter.ProductCategoryAdapter;
-import com.hiconsolution.streetsop17.adapter.StoreAdapter;
 import com.hiconsolution.streetsop17.models.ProductCategoryModel;
-import com.hiconsolution.streetsop17.models.StoreModel;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class MenProducts extends Fragment {
     View rootView;

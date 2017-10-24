@@ -7,7 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
 import com.hiconsolution.streetsop17.R;
 
 import java.util.ArrayList;
@@ -19,15 +24,19 @@ import java.util.ArrayList;
 public class ImageSliderAdapter extends PagerAdapter {
 
 
-    private ArrayList<Integer> IMAGES;
+    private ArrayList<Integer> imagesList;
+
     private LayoutInflater inflater;
-    private Context context;
+    private Context mContext;
 
 
-    public ImageSliderAdapter(Context context,ArrayList<Integer> IMAGES) {
-        this.context = context;
-        this.IMAGES=IMAGES;
+    public ImageSliderAdapter(Context context, ArrayList<Integer> imagesList) {
+        this.mContext = context;
+        this.imagesList = imagesList;
+        //this.productDetailLists = detailLists;
         inflater = LayoutInflater.from(context);
+
+
     }
 
     @Override
@@ -37,21 +46,44 @@ public class ImageSliderAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return IMAGES.size();
+        return imagesList.size();
     }
 
     @Override
     public Object instantiateItem(ViewGroup view, int position) {
+        final String image = imagesList.get(position).toString();
+
         View imageLayout = inflater.inflate(R.layout.slidingimages_layout, view, false);
 
         assert imageLayout != null;
-        final ImageView imageView = (ImageView) imageLayout.findViewById(R.id.product_image_viewer);
+        final ImageView imageViewer = (ImageView) imageLayout.findViewById(R.id.product_image_viewer);
+        final ProgressBar progressBar = (ProgressBar) imageLayout.findViewById(R.id.progressBar);
 
+        //imageView.setImageResource(imageLink.get(position));
+        Glide.with(mContext).load(image).listener(new RequestListener<String, GlideDrawable>() {
+            @Override
+            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
+                progressBar.setVisibility(View.GONE);
+                return false;
+            }
 
-        imageView.setImageResource(IMAGES.get(position));
-
+            @Override
+            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
+                progressBar.setVisibility(View.GONE);
+                return false;
+            }
+        }).into(imageViewer);
         view.addView(imageLayout, 0);
 
+//        imageLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(mContext,"click", Toast.LENGTH_LONG).show();
+//                Intent intent = new Intent(v.getContext(), ShowFullImage.class);
+//                intent.putExtra("picture", image);
+//                mContext.startActivity(intent);
+//            }
+//        });
         return imageLayout;
     }
 
@@ -68,5 +100,4 @@ public class ImageSliderAdapter extends PagerAdapter {
     public Parcelable saveState() {
         return null;
     }
-
 }

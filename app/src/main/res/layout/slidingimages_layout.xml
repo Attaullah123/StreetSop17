@@ -10,4 +10,5 @@
         android:adjustViewBounds="true"
         android:src="@drawable/slider2"
         android:scaleType="fitXY" />
+
 </FrameLayout>
